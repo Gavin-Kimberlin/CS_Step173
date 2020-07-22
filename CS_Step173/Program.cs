@@ -10,6 +10,12 @@ namespace CS_Step173
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("\nDo you still want to work here? (y/n)");
+            string quit = Console.ReadLine();
+            IQuittable iQuittable = new Employee();
+            iQuittable.Quit(name, quit);
         }
     }
 }
