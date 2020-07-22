@@ -13,10 +13,6 @@ namespace CS_Step173
 
         public void Quit(string Name, string IsQuitting)
         {
-            Name = X;
-            IsQuitting = Y;
-            Console.WriteLine(Name + " " + IsQuitting); //Testing because nothing is being input into the method
-
             if (IsQuitting == "y")
             {
                 Console.WriteLine("\n" + Name + " is quitting.");
